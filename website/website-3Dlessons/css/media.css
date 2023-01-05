@@ -1,0 +1,416 @@
+/* medium screen */
+
+@media (max-width: 991px) {
+
+  /* hero md */
+
+  .hero__title {
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+  }
+
+  .hero__text {
+    width: 355px;
+    margin-bottom: 62px;
+  }
+
+  .hero__block-left {
+    margin-bottom: 5px;
+  }
+
+  .hero__block-right {
+    background-image: url('../media-img/hero-690.png');
+    background-position: 84% 45%;
+    background-size: 80%;
+  }
+
+  .hero__container {
+    margin-bottom: 10px;
+  }
+
+  /* advantage md */
+
+  .advantage {
+    margin-bottom: 74px;
+  }
+
+  .advantage__block-right {
+    padding-top: 68px;
+  }
+
+  .advantage__descr {
+    width: 100%;
+  }
+
+  .advantage__block-left {
+    background-position: center 80%;
+    background-size: 87%;
+  }
+
+  .advantage__block {
+    display: inline-block;
+  }
+
+  .advantage__icon {
+    margin-bottom: 10px;
+  }
+
+  .advantage__priority {
+    width: 100%;
+  }
+
+  /* teacher md */
+
+  .teacher__descr {
+    width: 101%;
+    margin-bottom: 21px;
+  }
+
+  .teacher__card:last-child {
+    margin-bottom: 52px;
+  }
+
+  /* course md */
+
+  .course__card {
+    height: 556px;
+  }
+
+  .course__clock {
+    top: 12px;
+    right: 10px;
+  }
+
+  .course__btn {
+    padding: 20px 55px;
+    bottom: 30px;
+    right: 106px;
+  }
+
+}
+
+/* small screen */
+
+@media (max-width: 767px) {
+
+  /* header sm */
+
+  .header__left {
+    justify-content: center;
+    margin-bottom: 3px;
+  }
+
+  .header__right {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+
+  /* hero sm */
+
+  .hero__block-left {
+    padding-top: 77px;
+  }
+
+  .hero__button {
+    margin-bottom: 135px;
+  }
+
+  /* advantage sm */
+
+  .advantage {
+    margin-bottom: 54px;
+  }
+
+  .advantage__block-left {
+    background-position: 50% 30%;
+    background-size: 83%;
+  }
+
+  .advantage__title {
+    width: 100%;
+  }
+
+  .advantage__descr {
+    width: 100%;
+  }
+
+  .advantage__icon {
+    margin-bottom: 11px;
+  }
+
+  /* teacher sm */
+
+  .teacher__descr {
+    margin-bottom: 23px;
+  }
+
+  .teacher__card:last-child {
+    margin-bottom: 48px;
+  }
+
+  /* course sm */
+
+  .course__container {
+    padding-top: 74px;
+  }
+
+  .course__card {
+    height: 653px;
+  }
+
+  .course__card-title {
+    width: 107%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .course__clock {
+    right: 10px;
+  }
+
+  .course__btn {
+    padding: 20px 48px;
+    right: 29px;
+  }
+
+}
+
+/* extra small xs */
+
+@media (max-width: 575px) {
+
+  /* header */
+
+  .menu-toggle {
+    width: 35px;
+    height: 40px;
+    margin: 0 -2px 0 0;
+    padding: 7px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle__line {
+    position: relative;
+    display: block;
+  }
+
+  .menu-toggle__line::after,
+  .menu-toggle__line::before {
+    position: absolute;
+    left: 0;
+    content: "";
+  }
+
+  .menu-toggle__line::before {
+    top: 7px;
+  }
+
+  .menu-toggle__line::after {
+    top: -7px;
+  }
+
+  .menu-toggle__line,
+  .menu-toggle__line::after,
+  .menu-toggle__line::before {
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+  }
+
+  .nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 184px;
+    height: 100vh;
+    top: -20px;
+    right: -100vh;
+    margin: 0;
+    padding: 20px 20px 0 50px;
+    z-index: 100;
+    background-color: var(--color-blue);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 24px 0px 0px 24px;
+    visibility: hidden;
+  }
+
+  .burger-active {
+    visibility: visible;
+    right: 0;
+    transition: right .5s ease-in-out;
+  }
+
+  .nav__link {
+    color: var(--color-white);
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav__item {
+    margin-bottom: 20px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .menu-closed {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .header__left {
+    justify-content: flex-end;
+  }
+
+  .header__container {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .header__right {
+    justify-content: flex-start;
+    padding-top: 12px;
+  }
+
+  /* hero */
+
+  .hero__title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .hero__block-left {
+    padding-top: 50px;
+  }
+
+  .hero__text {
+    width: 319px;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .hero__button {
+    margin-bottom: 51px;
+    padding: 20px 53px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* advantage */
+
+  .advantage {
+    margin-bottom: 43px;
+  }
+
+  .advantage__block-right {
+    padding-top: 50px;
+  }
+
+  .advantage__title {
+    width: 90%;
+    margin-bottom: 2px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .advantage__descr {
+    width: 100%;
+  }
+
+  .advantage__block {
+    flex-wrap: nowrap;
+    padding-top: 22px;
+  }
+
+  .advantage__icon {
+    width: 108px;
+    margin-bottom: 8px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+  }
+
+  /* teacher */
+
+  .teacher__container {
+    padding-top: 47px;
+  }
+
+  .teacher__title {
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .teacher__descr {
+    margin-bottom: 21px;
+  }
+
+  .teacher__card:last-child {
+    margin-bottom: 25px;
+  }
+
+  /* course */
+
+  .course {
+    margin-bottom: 16px;
+  }
+
+  .course__container {
+    padding-top: 46px;
+  }
+
+  .course__title {
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .course__card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .course__card {
+    height: 654px;
+  }
+
+  .course__btn {
+    padding: 20px 55px;
+  }
+
+  .course__card-title-xs-sm {
+    width: 70%;
+  }
+
+  .course__clock {
+    top: 13px;
+    right: 10px;
+  }
+
+}
